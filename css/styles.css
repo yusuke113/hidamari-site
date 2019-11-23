@@ -1,0 +1,124 @@
+html {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
+		Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	background: #f7f3e4;
+	margin: 0;
+}
+
+.backwidth {
+	width: 100%;
+	height: 1000px;
+	/* background: url('../img/backimg1.jpg') ; */
+	margin: 0 auto;
+	background: #fff;
+}
+
+/* ヘッダー */
+header {
+	padding-top: 0;
+}
+
+/* ホーム */
+.home {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.block-inner-wide {
+	margin: 0 auto;
+}
+
+/* ロゴ */
+
+/* スライドショー */
+.slideshow {
+	position: relative;
+	top: -90px;
+}
+
+#box {
+	width: 100%;
+	height: 450px;
+	margin: 0 auto;
+	font-size: 50px;
+	text-align: center;
+	line-height: 450px;
+	background: orange;
+}
+
+#slide {
+	width: 100%;
+	height: 450px;
+	margin: 0 auto;
+}
+
+.slideshow {
+	margin: 0 auto;
+}
+
+#slide ul {
+	margin: 0 auto;
+}
+
+#slide img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0 auto;
+}
+
+/* ナビゲーション */
+
+.items {
+	display: flex;
+}
+.items a {
+	text-decoration: none;
+	color: #333;
+	margin-left: 30px;
+}
+
+.demo {
+
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	width: 100px;
+	height: 100px;
+}
+
+.box::before {
+	background-color: skyblue;
+	width: 25px;
+	border-radius: 50%;
+	content: '\f368';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.box1 {
+	background: pink;
+}
+.box2 {
+	background: orange;
+}
+.box3 {
+	background: tomato;
+}
+.box4 {
+	background: skyblue;
+}
+.box5 {
+	background: greenyellow;
+}
