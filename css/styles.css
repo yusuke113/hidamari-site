@@ -1,12 +1,15 @@
 html {
 	overflow-x: hidden;
-
 }
 
 body {
 	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
 		Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	margin: 0;
+}
+
+:root {
+	--main-font-color: #393F43;
 }
 
 /********** ヘッダー Start **********/
@@ -135,50 +138,55 @@ table td:nth-of-type(8) {
 /********** スライドショー End **********/
 
 /********** ナビゲーション Start **********/
-.items {
+.menu {
 	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 0;
+	margin: 55px 0;
 }
-.items a {
+
+.menu a {
 	text-decoration: none;
 	color: #333;
-	margin-left: 30px;
+	margin-left: 60px;
 }
 
-.demo {
+.menu a:first-of-type {
+	margin-left: 0;
 }
 
-.box {
-	display: flex;
-	flex-direction: column;
+.fas {
 	list-style: none;
-	width: 100px;
-	height: 100px;
+	font-size: 40px;
+	width: 78px;
+	height: 62px;
+	background: #C9F0CE;
+	border-radius: 50%;
+	padding-top: 16px;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.1s ease;
 }
 
-.box:before {
-	background-color: skyblue;
-	width: 25px;
-	border-radius: 50%;
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	content: '\f0f9';
-	margin: 0 auto;
+.menu a p {
+	font-size: 14px;
+	color: var(--main-font-color);
+	font-weight: bold;
 	margin-top: 20px;
 }
 
-.box1 {
-	background: hotpink;
+.menu a:hover .fas{
+	transform: scale(1.3);
 }
-.box2 {
-	background: orange;
-}
-.box3 {
-	background: tomato;
-}
-.box4 {
-	background: skyblue;
-}
-.box5 {
-	background: greenyellow;
+
+.menu a:hover {
+	opacity: .8;
 }
 /********** ナビゲーション End **********/
+
+.home-end {
+	background-image: url("../img/leaf1.png");
+	height: 16px;
+	margin-top: 10px;
+}
+
