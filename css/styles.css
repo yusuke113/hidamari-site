@@ -1,3 +1,8 @@
+html {
+	overflow-x: hidden;
+
+}
+
 body {
 	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
 		Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -43,18 +48,17 @@ header img {
 	height: 450px;
 	top: 0;
 	opacity: 0; /* マスクを表示しない */
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.45);
 	-webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
 }
-
 
 /***** 電話番号 Start *****/
 .telephone {
-	margin-left: 95%;
+	margin-left: 100%;
 	color: #fff;
-	-webkit-transition: all 0.6s ease;
-	transition: all 0.6s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .telephone-info {
@@ -73,48 +77,60 @@ header img {
 
 .telephone p:nth-of-type(2) {
 	font-size: 24px;
+	margin-right: 16px;
+}
+
+.telephone p:nth-of-type(2)::before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f87b';
+	color: #EA9A5D;
+	font-size: 28px;
+	margin-right: 6px;
 }
 
 .slideshow .mask:hover .telephone {
-	margin-left: 75%;/* 左にずらす */
+	margin-left: 78%;/* 左にずらす */
 }
-/***** 電話番号 Start *****/
-
-/***** 診察時間 Start *****/
-#schedule-table {
-	margin-right: 95%;
-	color: #fff;
-	white-space: nowrap;
-	-webkit-transition: all 0.6s ease;
-	transition: all 0.6s ease;
-}
-
-.telephone-info {
-	text-align: center;
-
-}
-
-.telephone p {
-	margin-bottom: 2px;
-	margin-top: 0;
-	white-space: nowrap;
-}
-.telephone p:first-of-type {
-	padding-top: 10px;
-}
-
-.telephone p:nth-of-type(2) {
-	font-size: 24px;
-}
-
-.slideshow .mask:hover .telephone {
-	margin-left: 75%;/* 左にずらす */
-}
-/***** 診察時間 End *****/
 
 .slideshow .mask:hover {
 	opacity: 1; /* マスクを表示する */
 }
+/***** 電話番号 End *****/
+
+/***** 診察時間 Start *****/
+#schedule-table {
+	margin-left: -10%;
+	margin-top: 225px;
+	color: #fff;
+	white-space: nowrap;
+	-webkit-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+table {
+  border-collapse: collapse;
+}
+table th, table td {
+	padding: 0 8px;
+  border-right: solid 1px #fff;
+  /*実線 1px 黒*/
+}
+
+table td:nth-of-type(7) {
+	padding-left: 13px;
+}
+table td:nth-of-type(8) {
+	padding-left: 13px;
+}
+#schedule-table p {
+	margin-left: 100px;
+}
+
+.slideshow .mask:hover #schedule-table {
+	margin-left: 1%;/* 左にずらす */
+}
+/***** 診察時間 End *****/
 
 /********** スライドショー End **********/
 
