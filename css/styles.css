@@ -38,9 +38,9 @@ body {
 	background-color: skyblue;
 	width: 25px;
 	border-radius: 50%;
-	content: '\f368';
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
+	content: '\f0f9';
 	margin: 0 auto;
 	margin-top: 20px;
 }
