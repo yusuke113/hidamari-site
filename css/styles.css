@@ -21,7 +21,7 @@ body {
 .heading {
 	display: flex;
 	flex-direction: column;
-	margin: 60px auto;
+	margin: 50px auto;
 }
 h1.heading-word {
 	font-size: 30px;
@@ -34,6 +34,13 @@ h1.heading-word {
 	height: 0.2rem;
 	background: var(--accent-color);
 	margin: 0 auto;
+}
+.sub-underline {
+	width: 7rem;
+	height: 0.1rem;
+	background: var(--accent-color);
+	margin: 0 auto;
+	margin-bottom: 25px;
 }
 /***** 見出し *****/
 
@@ -64,13 +71,23 @@ header img {
 	opacity: 0;
 	transition: all 1s ease;
 }
+.animation2 {
+	opacity: 0;
+	transition: all 1s ease;
+}
 .left {
 	transform: translateX(-100%);
 }
 .right {
 	transform: translateX(100%);
 }
-.fast {
+.up {
+	transform: translateY(50%);
+}
+.up2 {
+	transform: translateY(100%);
+}
+.delay {
 	transition: all 2s ease;
 }
 .delay1 {
@@ -79,13 +96,36 @@ header img {
 .delay2 {
 	transition: all 4s ease;
 }
+.delay3 {
+	transition: all 5s ease;
+}
+.fast {
+	transition: all .8s ease;
+}
+.fast2 {
+	transition: all 1.2s ease;
+}
+.fast3 {
+	transition: all 1.4s ease;
+}
+.fast4 {
+	transition: all 1.7s ease;
+}
+
 .animation.active {
 	opacity: 1;
 	transform: translateX(0);
 }
+.animation2.active {
+	opacity: 1;
+	transform: translateY(0);
+}
+.animation3.active {
+	opacity: 1;
+	transform: translateY(0);
+}
 
 /********** スクロールエフェクト **********/
-
 
 /*************** ホーム start ***************/
 /********** スライドショー Start **********/
@@ -248,6 +288,9 @@ table td:nth-of-type(8) {
 /*************** ホーム End ***************/
 
 /*************** クリニック紹介 Start ***************/
+.clinic-section {
+	height: 900px;
+}
 .clinic {
 	height: 910px;
 }
@@ -357,17 +400,20 @@ img.sun {
 	width: 400px;
 	height: 300px;
 	border-radius: 30%;
-	background: -moz-linear-gradient(left,
+	background: -moz-linear-gradient(
+		left,
 		#ffc59a 40%,
 		#f5cbab 60%,
 		#fae4d4 90%
 	);
-	background: -webkit-linear-gradient(left,
+	background: -webkit-linear-gradient(
+		left,
 		#ffc59a 40%,
 		#f5cbab 60%,
 		#fae4d4 90%
 	);
-	background: linear-gradient(to right,
+	background: linear-gradient(
+		to right,
 		#ffc59a 40%,
 		#f5cbab 60%,
 		#fae4d4 90%
@@ -390,12 +436,130 @@ img.sun {
 .cloud2 {
 	display: block;
 	position: relative;
-	top: -90px;
+	top: -100px;
 	margin-left: 70%;
 }
 /***** 経歴 *****/
-
-
 /********** 院長挨拶 End **********/
+
+/********** 訪問診療 Start **********/
+.visiting-clinic {
+	height: 1030px;
+}
+.visiting-about {
+	display: flex;
+	justify-content: center;
+}
+.about {
+	width: 600px;
+	height: 400px;
+	border-radius: 20%;
+	background: -webkit-linear-gradient(
+		right,
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.31) 25.61%,
+		#9dfaaf 100%
+	);
+	background: -moz-linear-gradient(
+		right,
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.31) 25.61%,
+		#9dfaaf 100%
+	);
+	background: linear-gradient(
+		to left,
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.31) 25.61%,
+		#9dfaaf 100%
+	);
+	margin-right: 20px;
+}
+.about-img {
+	width: 500px;
+	margin-top: 30px;
+}
+.about-img img {
+	width: 100%;
+	border-radius: 20%;
+}
+
+.about h3 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.about p {
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+
+.visiting-flow {
+	display: flex;
+	justify-content: center;
+}
+.flow-img {
+	width: 500px;
+	margin-top: 30px;
+}
+.flow-img img {
+	width: 100%;
+	border-radius: 20%;
+}
+.flow {
+	width: 600px;
+	height: 400px;
+	border-radius: 20%;
+	background: -moz-linear-gradient(
+		right,
+		#ffc59a 20%,
+		#f5cbab 50%,
+		#fae4d4 100%
+	);
+	background: -webkit-linear-gradient(
+		right,
+		#ffc59a 20%,
+		#f5cbab 50%,
+		#fae4d4 100%
+	);
+	background: linear-gradient(
+		to left,
+		#ffc59a 20%,
+		#f5cbab 50%,
+		#fae4d4 100%
+	);
+	margin-left: 20px;
+}
+
+.flow h3 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.flow p {
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+
+.notice {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+}
+.notice span {
+	content: url('../img/capsule-orange-color-thumbnail.png');
+	width: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+	transform: rotateZ(-100deg);
+}
+/********** 訪問診療 End **********/
+
+/********** 診察内容 Start **********/
+
+/********** 診察内容 End **********/
 
 /*************** クリニック紹介 End ***************/

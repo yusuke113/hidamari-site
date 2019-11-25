@@ -108,6 +108,30 @@ $(function() {
 				$('.animation').removeClass('active');
 			}
 		});
+
+		$('.trigger2').each(function() {
+			const position = $('.trigger2').offset().top;
+			const scroll = $(window).scrollTop();
+			const windowHeight = $(window).height();
+			if (scroll > position - windowHeight) {
+				$('.animation2').addClass('active');
+			}
+			if (scroll < 80) {
+				$('.animation2').removeClass('active');
+			}
+		});
+
+		$('.trigger3').each(function() {
+			const position = $('.trigger3').offset().top;
+			const scroll = $(window).scrollTop();
+			const windowHeight = $(window).height();
+			if (scroll > position - windowHeight) {
+				$('.animation3').addClass('active');
+			}
+			if (scroll < 80) {
+				$('.animation3').removeClass('active');
+			}
+		});
 	});
 
 	$(function() {
