@@ -9,8 +9,37 @@ body {
 }
 
 :root {
-	--main-font-color: #393F43;
+	--main-font-color: #393f43;
+	--accent-color: #e06d15;
 }
+
+/******************************/
+/**          共通部分          **
+/******************************/
+
+/***** 見出し *****/
+.heading {
+	display: flex;
+	flex-direction: column;
+	margin: 60px auto;
+}
+h1.heading-word {
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.heading-underline {
+	width: 3rem;
+	height: 0.2rem;
+	background: var(--accent-color);
+	margin: 0 auto;
+}
+/***** 見出し *****/
+
+/******************************/
+/**          共通部分          **
+/******************************/
 
 /********** ヘッダー Start **********/
 header {
@@ -28,9 +57,9 @@ header img {
 	height: 40px;
 	margin-top: 10px;
 }
-
 /********** ヘッダー End **********/
 
+/*************** ホーム start ***************/
 /********** スライドショー Start **********/
 .slideshow {
 	width: 100%;
@@ -66,7 +95,6 @@ header img {
 
 .telephone-info {
 	text-align: center;
-
 }
 
 .telephone p {
@@ -87,13 +115,13 @@ header img {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	content: '\f87b';
-	color: #EA9A5D;
+	color: #ea9a5d;
 	font-size: 28px;
 	margin-right: 6px;
 }
 
 .slideshow .mask:hover .telephone {
-	margin-left: 77%;/* 左にずらす */
+	margin-left: 77%; /* 左にずらす */
 }
 
 .slideshow .mask:hover {
@@ -112,12 +140,13 @@ header img {
 }
 
 table {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
-table th, table td {
+table th,
+table td {
 	padding: 0 8px;
-  border-right: solid 1px #fff;
-  /*実線 1px 黒*/
+	border-right: solid 1px #fff;
+	/*実線 1px 黒*/
 }
 
 table td:nth-of-type(7) {
@@ -127,11 +156,11 @@ table td:nth-of-type(8) {
 	padding-left: 13px;
 }
 #schedule-table p {
-	margin-left: 100px;
+	margin-left: 137px;
 }
 
 .slideshow .mask:hover #schedule-table {
-	margin-left: 1%;/* 左にずらす */
+	margin-left: 1%; /* 左にずらす */
 }
 /***** 診察時間 End *****/
 
@@ -161,7 +190,7 @@ table td:nth-of-type(8) {
 	font-size: 40px;
 	width: 78px;
 	height: 62px;
-	background: #C9F0CE;
+	background: #c9f0ce;
 	border-radius: 50%;
 	padding-top: 16px;
 	-webkit-transition: all 0.2s ease;
@@ -175,18 +204,169 @@ table td:nth-of-type(8) {
 	margin-top: 20px;
 }
 
-.menu a:hover .fas{
+.menu a:hover .fas {
 	transform: scale(1.3);
 }
 
 .menu a:hover {
-	opacity: .8;
+	opacity: 0.8;
 }
 /********** ナビゲーション End **********/
-
 .home-end {
-	background-image: url("../img/leaf1.png");
+	background-image: url('../img/leaf1.png');
 	height: 16px;
 	margin-top: 10px;
 }
+/*************** ホーム End ***************/
 
+/*************** クリニック紹介 Start ***************/
+.clinic {
+	height: 910px;
+}
+
+.illustration {
+	height: 30px;
+}
+
+img.cloud1 {
+	display: block;
+	position: relative;
+	top: -100px;
+	margin-left: 5%;
+}
+
+img.sun {
+	display: block;
+	position: relative;
+	top: -180px;
+	margin-left: 82%;
+}
+
+/********** 院長挨拶 Start **********/
+
+.inntyou-greeting {
+	display: flex;
+	justify-content: center;
+}
+
+/***** 院長 *****/
+.inntyou {
+	width: 50%;
+	position: relative;
+}
+.inntyou img {
+	width: 100%;
+	border-radius: 20%;
+	margin-left: 10%;
+}
+
+.inntyou-name {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 100px;
+}
+
+.inntyou-name h3 {
+	font-size: 24px;
+	font-weight: bold;
+	white-space: nowrap;
+	padding-left: 20px;
+	margin: 0 auto;
+	color: #09a318;
+}
+.inntyou-name h3:last-of-type {
+	color: var(--accent-color);
+}
+/***** 院長 *****/
+
+/***** あいさつ *****/
+.greeting-text {
+	width: 550px;
+	height: 400px;
+	border-radius: 20%;
+	background: -moz-radial-gradient(
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.8) 70%,
+		#9dfaaf 100%
+	);
+	background: -webkit-radial-gradient(
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.8) 70%,
+		#9dfaaf 100%
+	);
+	background: radial-gradient(
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.8) 70%,
+		#9dfaaf 100%
+	);
+	position: relative;
+	top: 200px;
+	margin-right: 5%;
+}
+
+.greeting-text h3 {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.greeting-text p {
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+.text-container {
+	width: 82%;
+	margin: 0 auto;
+}
+/***** あいさつ *****/
+
+/***** 経歴 *****/
+.career {
+	display: block;
+	width: 400px;
+	height: 300px;
+	border-radius: 30%;
+	background: -moz-linear-gradient(left,
+		#ffc59a 40%,
+		#f5cbab 60%,
+		#fae4d4 90%
+	);
+	background: -webkit-linear-gradient(left,
+		#ffc59a 40%,
+		#f5cbab 60%,
+		#fae4d4 90%
+	);
+	background: linear-gradient(to right,
+		#ffc59a 40%,
+		#f5cbab 60%,
+		#fae4d4 90%
+	);
+	margin-left: 10%;
+}
+.career h3 {
+	text-align: center;
+	padding-top: 30px;
+}
+.career ul {
+	margin-left: 55px;
+}
+.career li {
+	letter-spacing: 10px;
+	margin-bottom: 15px;
+}
+
+.cloud2 {
+	display: block;
+	position: relative;
+	top: -100px;
+	margin-left: 70%;
+}
+/***** 経歴 *****/
+
+
+/********** 院長挨拶 End **********/
+
+/*************** クリニック紹介 End ***************/
