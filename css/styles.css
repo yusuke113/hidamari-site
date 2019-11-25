@@ -59,6 +59,34 @@ header img {
 }
 /********** ヘッダー End **********/
 
+/********** スクロールエフェクト **********/
+.animation {
+	opacity: 0;
+	transition: all 1s ease;
+}
+.left {
+	transform: translateX(-100%);
+}
+.right {
+	transform: translateX(100%);
+}
+.fast {
+	transition: all 2s ease;
+}
+.delay1 {
+	transition: all 3s ease;
+}
+.delay2 {
+	transition: all 4s ease;
+}
+.animation.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/********** スクロールエフェクト **********/
+
+
 /*************** ホーム start ***************/
 /********** スライドショー Start **********/
 .slideshow {
@@ -225,7 +253,7 @@ table td:nth-of-type(8) {
 }
 
 .illustration {
-	height: 30px;
+	height: 10px;
 }
 
 img.cloud1 {
@@ -344,7 +372,8 @@ img.sun {
 		#f5cbab 60%,
 		#fae4d4 90%
 	);
-	margin-left: 10%;
+	margin-left: 11%;
+	margin-top: -80px;
 }
 .career h3 {
 	text-align: center;
