@@ -100,7 +100,7 @@ header img {
 	transition: all 5s ease;
 }
 .fast {
-	transition: all .8s ease;
+	transition: all 0.8s ease;
 }
 .fast2 {
 	transition: all 1.2s ease;
@@ -391,6 +391,7 @@ img.sun {
 .text-container {
 	width: 82%;
 	margin: 0 auto;
+	color: var(--defalt-font-color);
 }
 /***** あいさつ *****/
 
@@ -475,12 +476,12 @@ img.sun {
 	margin-right: 20px;
 }
 .about-img {
-	width: 500px;
-	margin-top: 30px;
+	width: 400px;
+	margin-top: 60px;
 }
 .about-img img {
 	width: 100%;
-	border-radius: 20%;
+	border-radius: 30%;
 }
 
 .about h3 {
@@ -500,12 +501,12 @@ img.sun {
 	justify-content: center;
 }
 .flow-img {
-	width: 500px;
-	margin-top: 30px;
+	width: 400px;
+	margin-top: 60px;
 }
 .flow-img img {
 	width: 100%;
-	border-radius: 20%;
+	border-radius: 30%;
 }
 .flow {
 	width: 600px;
@@ -535,13 +536,17 @@ img.sun {
 .flow h3 {
 	font-size: 20px;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 24px;
 	margin-bottom: 0;
 }
 
 .flow p {
 	font-size: 15px;
 	margin-bottom: 25px;
+}
+
+.text-container dt {
+	margin-top: 18px;
 }
 
 .notice {
@@ -559,6 +564,61 @@ img.sun {
 /********** 訪問診療 End **********/
 
 /********** 診察内容 Start **********/
+.service {
+	margin: 0 auto;
+	text-align: center;
+}
+#service {
+	margin-bottom: 0;
+}
+.service-contents {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.service-contents img {
+	width: 70%;
+}
+
+.sub-info {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.sub-info div {
+	margin: 0 40px;
+}
+.area-text {
+	width: 350px;
+	height: 160px;
+	border-radius: 103px;
+	background: #f1d0e4;
+}
+.area-text p {
+	width: 300px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.visiting-area span {
+	content: url('../img/capsule-orange-color-thumbnail.png');
+	width: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+	transform: rotateZ(-100deg);
+}
+
+.coop-text {
+	width: 300px;
+	height: 150px;
+	border-radius: 103px;
+	background: #C9F0CE;
+	text-align: left;
+}
+.coop-text p {
+	width: 300px;
+	padding-top: 26px;
+	margin-left: 60px;
+}
 
 /********** 診察内容 End **********/
 
