@@ -44,6 +44,69 @@ h1.heading-word {
 }
 /***** 見出し *****/
 
+/***** トップへ戻る *****/
+#page-top {
+	position: fixed;
+	bottom: 130px;
+	right: 20px;
+	font-size: 80%;
+	color: #fff;
+	text-align: center;
+}
+
+#page-top a {
+	display: block;
+	background: #9ae0a1;
+	color: #fff;
+	padding: 25px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	z-index: 1000;
+
+}
+
+.linkGoTop {
+	z-index: 3;
+}
+
+.linkGoTop:hover {
+	opacity: .7;
+}
+
+/***** トップへ戻る *****/
+
+/***** フッターへ *****/
+#page-bottom {
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	font-size: 80%;
+	color: #fff;
+	text-align: center;
+}
+
+#page-bottom a {
+	display: block;
+	background: #9ae0a1;
+	color: #fff;
+	padding: 25px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	z-index: 1000;
+
+}
+
+.linkGoBottom {
+	z-index: 3;
+}
+
+.linkGoBottom:hover {
+	opacity: .7;
+}
+/***** フッターへ *****/
+
 /******************************/
 /**          共通部分          **
 /******************************/
@@ -572,7 +635,7 @@ img.sun {
 	margin-bottom: 0;
 }
 .service-contents {
-	width: 100%;
+	width: 90%;
 	position: relative;
 	display: inline-block;
 }
@@ -586,7 +649,7 @@ img.sun {
 	margin-top: 30px;
 }
 .sub-info div {
-	margin: 0 40px;
+	margin: 0 30px;
 }
 .area-text {
 	width: 350px;
@@ -609,17 +672,175 @@ img.sun {
 
 .coop-text {
 	width: 300px;
-	height: 150px;
+	height: 140px;
 	border-radius: 103px;
-	background: #C9F0CE;
+	background: #c9f0ce;
 	text-align: left;
 }
 .coop-text p {
 	width: 300px;
-	padding-top: 26px;
+	padding-top: 24px;
 	margin-left: 60px;
 }
-
 /********** 診察内容 End **********/
+
+/********** 外来診療 Start **********/
+.outpatient-text p {
+	padding-top: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+.outpatient-text span {
+	content: url('../img/capsule-orange-color-thumbnail.png');
+	width: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+	transform: rotateZ(-100deg);
+}
+.schedule {
+	text-align: center;
+	margin: 60px 0;
+}
+.schedule h3 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.schedule img {
+	width: 45%;
+}
+/********** 外来診療 End **********/
+
+/********** アクセス Start **********/
+.access {
+	background: #fae4d4;
+	padding-bottom: 30px;
+}
+.access-info {
+	width: 55%;
+	margin: 0 auto;
+}
+.access-logo {
+	display: flex;
+	height: 30px;
+	align-items: center;
+	margin: 0 auto;
+}
+.access-logo img {
+	width: 40px;
+	height: 100%;
+	border-radius: 10px;
+	margin-right: 8px;
+}
+.access-logo h4 {
+	font-size: 22px;
+}
+
+.access-number {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.access-num {
+	width: 230px;
+	height: 100px;
+	background: #b6bfc4;
+	margin: 0 15px;
+}
+.access-num p {
+	width: 90%;
+	margin: 7px 0;
+}
+.tele-number {
+	width: 340px;
+	height: 100px;
+	border-radius: 40px;
+	background: #ea9a5d;
+	color: #fff;
+	text-align: center;
+	margin: 10px 0;
+}
+.tele-number p {
+	width: 90%;
+	margin: 4px auto;
+}
+.tele-number p:nth-of-type(2) {
+	font-size: 24px;
+	margin-right: 16px;
+}
+
+.access-map {
+	text-align: center;
+	margin: 0 auto;
+}
+.map-info {
+	width: 80%;
+	margin: 0 auto;
+}
+.map-info p {
+	width: 500px;
+	height: 20px;
+	margin: 5px 0;
+}
+/********** アクセス End **********/
+
+/********** フッター Start **********/
+footer {
+	margin-top: 20px 0 auto;
+}
+.footer-nav {
+	width: 850px;
+	margin: 0 auto;
+}
+
+.footer-nav ul {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.footer-nav a {
+	text-decoration: none;
+	color: var(--main-font-color);
+}
+.footer-nav a:hover {
+	opacity: 0.7;
+}
+.footer-nav li {
+	list-style: none;
+	font-size: 14px;
+}
+
+.last {
+	margin: 50px 0 auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.last h3 {
+	margin: 10px auto;
+}
+.last span {
+	color: var(--accent-color);
+}
+
+.footer-logo {
+	background: #9ae0a1;
+	margin: 0 auto;
+	width: 350px;
+	height: 60px;
+	border: var(--main-font-color) 1px solid;
+	text-align: center;
+}
+.footer-logo:hover {
+	opacity: 0.9;
+}
+.footer-logo img {
+	width: 300px;
+	margin-top: 17px;
+}
+/********** フッター End **********/
 
 /*************** クリニック紹介 End ***************/
