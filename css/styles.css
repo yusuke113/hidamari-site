@@ -74,6 +74,10 @@ h1.heading-word {
 	opacity: .7;
 }
 
+.linkGoTop p {
+	/* display: none; */
+}
+
 /***** トップへ戻る *****/
 
 /***** フッターへ *****/
