@@ -264,10 +264,27 @@ header img {
 }
 /***** 電話番号 End *****/
 
+/***** 理念 Start *****/
+.philosophy {
+	margin: 100px 0 auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.philosophy h2 {
+	margin: 0 auto;
+	font-size: 38px;
+	color: #fff;
+}
+.philosophy span {
+	color: var(--accent-color);
+}
+/***** 理念 End *****/
+
+
 /***** 診察時間 Start *****/
 #schedule-table {
 	margin-left: -10%;
-	margin-top: 225px;
+	margin-top: 65px;
 	color: #fff;
 	white-space: nowrap;
 	-webkit-transition: all 0.6s ease;
@@ -376,7 +393,7 @@ img.cloud1 {
 img.sun {
 	display: block;
 	position: relative;
-	top: -200px;
+	top: -240px;
 	margin-left: 80%;
 }
 
@@ -393,9 +410,9 @@ img.sun {
 	position: relative;
 }
 .inntyou img {
-	width: 100%;
+	width: 50%;
 	border-radius: 20%;
-	margin-left: 10%;
+	margin-left: 30%;
 }
 
 .inntyou-name {
@@ -614,6 +631,7 @@ img.sun {
 
 .text-container dt {
 	margin-top: 18px;
+	font-weight: bold;
 }
 
 .notice {
