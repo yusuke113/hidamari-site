@@ -4,7 +4,7 @@ echo "start!! herokuサーバーへ修正を反映します"
 echo "*****************************"
 echo ""
 
-git add .
+git add -A
 git commit -m "update"
 git push heroku master
 heroku open
