@@ -1,6 +1,124 @@
-.box {
-  width: 700px;
-  height: 1000px;
-  background: pink;
+html {
+  overflow-x: hidden;
+  background: #E1F7E4;
+}
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
+		Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	margin: 0;
+}
+
+:root {
+	--main-font-color: #393f43;
+	--accent-color: #e06d15;
+}
+
+/********** ヘッダー Start **********/
+header {
+	width: 100%;
+	height: 60px;
+	background: #9ae0a1;
+}
+
+.header-logo {
+	display: block;
+	text-align: center;
+}
+
+header img {
+	height: 40px;
+	margin-top: 10px;
+}
+/********** ヘッダー End **********/
+
+/* アイキャッチ Start */
+.eyecatch {
+	width: 748px;
+	height: 200px;
+	text-align: center;
+	font-size: 32px;
+	line-height: 350px;
+	background: url('../img/checklist.png') no-repeat center;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.eyecatch::before {
+	content: '';
+	background: inherit;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+}
+.title {
+  text-align: center;
+  width: 1000px;
+  height: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  top: -70px;
+}
+.title h1 {
+	color: var(--main-font-color);
+	font-size: 40px;
+	letter-spacing: 5px;
+  text-shadow: 3px 5px 8px #fff;
   margin: 0 auto;
+  margin-right: 500px;
+}
+
+/* アイキャッチ End */
+
+/* main Start */
+.main {
+	display: block;
+	margin: 0 auto;
+	width: 700px;
+	height: 1000px;
+  padding: 24px;
+  background: #fff;
+}
+/* main End */
+.heading h2,
+.heading h3,
+.heading h4 {
+	border: none;
+	position: relative;
+	padding-left: 30px;
+	font-size: 24px;
+	padding: 25px;
+	left: 0;
+}
+
+.heading h2:before {
+	height: 1em;
+	border-radius: 50%;
+	width: 1em;
+	left: 0;
+	top: 1.15em;
+	background-image: linear-gradient(
+		45deg,
+		#ea9a5d 0%,
+		#f5cbab 99%,
+		#fae4d4 100%
+	);
+}
+
+.heading h2:before,
+.maru h3:before,
+.maru h4:before {
+	content: '';
+	position: absolute;
 }
