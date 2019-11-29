@@ -33,75 +33,113 @@ header img {
 /********** ヘッダー End **********/
 
 /***** トップへ戻る *****/
-#page-top {
-	position: fixed;
-	bottom: 130px;
-	right: 20px;
-	font-size: 80%;
-	color: #fff;
-	text-align: center;
-}
-
 #page-top a {
 	display: block;
-	background: #9ae0a1;
 	color: #fff;
 	padding: 25px 0;
-	text-align: center;
 	text-decoration: none;
-	border-radius: 10px;
-	z-index: 1000;
 
 }
 
 .linkGoTop {
-	z-index: 3;
+	position: fixed;
+	bottom: 180px;
+	right: 40px;
+	font-size: 80%;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	background: #ea9a5d;
+	border-radius: 50%;
+	z-index: 1000;
 }
 
 .linkGoTop:hover {
 	opacity: .7;
 }
 
-.linkGoTop p {
-	/* display: none; */
+.linkGoTop i {
+	color: #fff;
+	font-size: 40px;
+	line-height: 56px;
 }
 
 /***** トップへ戻る *****/
 
-/***** フッターへ *****/
-#page-bottom {
-	position: fixed;
-	bottom: 40px;
-	right: 20px;
-	font-size: 80%;
+/***** ホームへ戻る *****/
+#page-home a {
+	display: block;
 	color: #fff;
-	text-align: center;
+	padding: 25px 0;
+	text-decoration: none;
+
 }
+
+.linkGoHome {
+	position: fixed;
+	bottom: 115px;
+	right: 40px;
+	font-size: 80%;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	background: #ea9a5d;
+	border-radius: 50%;
+	z-index: 1000;
+}
+
+.linkGoHome:hover {
+	opacity: .7;
+}
+
+.linkGoHome i {
+	color: #fff;
+	font-size: 30px;
+	line-height: 58px;
+}
+/***** ホームへ戻る *****/
+
+/***** フッターへ *****/
 
 #page-bottom a {
 	display: block;
-	background: #9ae0a1;
 	color: #fff;
 	padding: 25px 0;
-	text-align: center;
 	text-decoration: none;
-	border-radius: 10px;
-	z-index: 1000;
-
 }
 
 .linkGoBottom {
-	z-index: 3;
+	position: fixed;
+	bottom: 50px;
+	right: 40px;
+	font-size: 80%;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	background: #ea9a5d;
+	border-radius: 50%;
+	z-index: 1000;
 }
 
 .linkGoBottom:hover {
 	opacity: .7;
 }
+.linkGoBottom i {
+	color: #fff;
+	font-size: 40px;
+	line-height: 62px;
+}
 /***** フッターへ *****/
 
 h2,
 h3,
-h4,
+h4 {
+	margin: 15px 0;
+}
+
 p {
 	margin: 0;
 }
