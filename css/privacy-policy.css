@@ -1,6 +1,6 @@
 html {
-  overflow-x: hidden;
-  background: #E1F7E4;
+	overflow-x: hidden;
+	background: #e1f7e4;
 }
 
 body {
@@ -32,6 +32,116 @@ header img {
 }
 /********** ヘッダー End **********/
 
+/***** トップへ戻る *****/
+#page-top {
+	position: fixed;
+	bottom: 130px;
+	right: 20px;
+	font-size: 80%;
+	color: #fff;
+	text-align: center;
+}
+
+#page-top a {
+	display: block;
+	background: #9ae0a1;
+	color: #fff;
+	padding: 25px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	z-index: 1000;
+
+}
+
+.linkGoTop {
+	z-index: 3;
+}
+
+.linkGoTop:hover {
+	opacity: .7;
+}
+
+.linkGoTop p {
+	/* display: none; */
+}
+
+/***** トップへ戻る *****/
+
+/***** フッターへ *****/
+#page-bottom {
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	font-size: 80%;
+	color: #fff;
+	text-align: center;
+}
+
+#page-bottom a {
+	display: block;
+	background: #9ae0a1;
+	color: #fff;
+	padding: 25px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	z-index: 1000;
+
+}
+
+.linkGoBottom {
+	z-index: 3;
+}
+
+.linkGoBottom:hover {
+	opacity: .7;
+}
+/***** フッターへ *****/
+
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+.heading {
+	margin-bottom: 20px;
+}
+
+.heading h2,
+.heading h3,
+.heading h4 {
+	border: none;
+	position: relative;
+	padding-left: 30px;
+	font-size: 24px;
+	padding: 25px;
+	left: 0;
+}
+
+.heading h2:before {
+	height: 1em;
+	border-radius: 50%;
+	width: 1em;
+	left: 0;
+	top: 1.3em;
+	background-image: linear-gradient(
+		45deg,
+		#ea9a5d 0%,
+		#f5cbab 99%,
+		#fae4d4 100%
+	);
+}
+
+.heading h2:before,
+.maru h3:before,
+.maru h4:before {
+	content: '';
+	position: absolute;
+}
+
 /* アイキャッチ Start */
 .eyecatch {
 	width: 748px;
@@ -62,23 +172,22 @@ header img {
 	bottom: -5px;
 	z-index: -1;
 }
-.title {
-  text-align: center;
-  width: 1000px;
-  height: 100px;
-  padding-bottom: 50px;
-  position: relative;
-  top: -70px;
+.main-title {
+	text-align: center;
+	width: 900px;
+	height: 100px;
+	padding-bottom: 50px;
+	position: relative;
+	top: -70px;
 }
-.title h1 {
+.main-title h1 {
 	color: var(--main-font-color);
 	font-size: 40px;
 	letter-spacing: 5px;
-  text-shadow: 3px 5px 8px #fff;
-  margin: 0 auto;
-  margin-right: 500px;
+	text-shadow: 3px 5px 8px #fff;
+	margin: 0 auto;
+	margin-right: 400px;
 }
-
 /* アイキャッチ End */
 
 /* main Start */
@@ -86,39 +195,220 @@ header img {
 	display: block;
 	margin: 0 auto;
 	width: 700px;
-	height: 1000px;
-  padding: 24px;
-  background: #fff;
+	padding: 24px;
+	background: #fff;
+}
+
+.container {
+	padding: 10px;
+	margin: 0 auto;
+}
+
+/******* サブタイトル *******/
+.sub-title {
+	text-align: right;
+}
+
+.subsub-title {
+	margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.text ul {
+	padding-left: 20px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	list-style-position: inside;
+}
+.text ul li {
+	padding-left: 1em;
+	text-indent: -3em;
+	margin-bottom: 5px;
+}
+.text li {
+	list-style: none;
+}
+.text .down-li {
+	padding-left: 1em;
+	text-indent: 0;
+}
+.text10 {
+	margin-bottom: 12px;
+}
+.text10 ul {
+	padding-left: 20px;
+	margin-left: 20px;
+	list-style-position: inside;
+}
+.text10 ul li {
+	padding-left: 1.3em;
+	text-indent: -3.7em;
+	margin-bottom: 5px;
+}
+.text10 li {
+	list-style: none;
+}
+
+.text2 {
+	margin-bottom: 12px;
+}
+.text2 p {
+	padding-left: 3.2em;
+	text-indent: -2.7rem;
+  margin-bottom: 1px;
+}
+.text2 ul {
+	padding-left: 20px;
+	margin-left: 20px;
+	list-style-position: inside;
+}
+.text2 ul li {
+	padding-left: 1rem;
+	text-indent: -1.4rem;
+	margin-bottom: 5px;
+}
+.text2 li {
+	/* list-style: none; */
+}
+.text2-2 {
+	margin-bottom: 12px;
+}
+.text2-2 h4 {
+	margin-bottom: 5px;
+}
+.text2-2 p {
+	padding-left: 1rem;
+	text-indent: 0;
+	margin-bottom: 1px;
+}
+.text2-2 ul {
+	padding-left: 20px;
+	margin-left: 20px;
+	list-style-position: inside;
+}
+.text2-2 ul li {
+	padding-left: 1rem;
+	text-indent: 1rem;
+	margin-bottom: 5px;
+}
+.text2-2 li {
+	/* list-style: none; */
+}
+.text2-3 {
+	margin-bottom: 12px;
+}
+.text2-3 h4 {
+	padding-left: 2rem;
+	text-indent: -2.8rem;
+	margin-bottom: 5px;
+}
+.text2-3 p {
+	padding-left: 2em;
+	margin-bottom: 1px;
+	text-indent: 0;
+}
+.text2-3 ul {
+	padding-left: 20px;
+	margin-left: 20px;
+	list-style-position: inside;
+}
+.text2-3 ul li {
+	padding-left: 2.7em;
+	text-indent: -1.5rem;
+	margin-bottom: 5px;
+}
+.text2-3 li {
+	/* list-style: none; */
+}
+/******* サブタイトル *******/
+
+.safety-img1 {
+	width: 100%;
+	text-align: center;
+	margin: 20px auto;
+}
+.safety-img1 img {
+	width: 400px;
+}
+.safety-img2 {
+	width: 100%;
+	text-align: center;
+	margin: 40px auto;
+}
+.safety-img2 img {
+	width: 500px;
+	border: 1px solid #333333;
+	padding: 18px 7px;
+}
+.safety-img3 {
+	width: 100%;
+	text-align: center;
+	margin: 40px auto;
+}
+.safety-img3 img {
+	width: 500px;
+	border: 1px solid #333333;
+	padding: 20px 7px;
 }
 /* main End */
-.heading h2,
-.heading h3,
-.heading h4 {
-	border: none;
-	position: relative;
-	padding-left: 30px;
-	font-size: 24px;
-	padding: 25px;
-	left: 0;
+/********** フッター Start **********/
+footer {
+	width: 700px;
+	padding: 5px 24px 0 24px;
+	margin: 0 auto;
+	background: #fae4d4;
+}
+.footer-nav {
+	width: 700px;
+	margin: 0 auto;
 }
 
-.heading h2:before {
-	height: 1em;
-	border-radius: 50%;
-	width: 1em;
-	left: 0;
-	top: 1.15em;
-	background-image: linear-gradient(
-		45deg,
-		#ea9a5d 0%,
-		#f5cbab 99%,
-		#fae4d4 100%
-	);
+.footer-nav ul {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.footer-nav a {
+	text-decoration: none;
+	color: var(--main-font-color);
+}
+.footer-nav a:hover {
+	opacity: 0.7;
+}
+.footer-nav li {
+	list-style: none;
+	font-size: 14px;
 }
 
-.heading h2:before,
-.maru h3:before,
-.maru h4:before {
-	content: '';
-	position: absolute;
+.last {
+	margin: 50px 0 auto;
+	text-align: center;
+	padding-bottom: 10px;
 }
+.last h3 {
+	margin: 10px auto;
+}
+.last span {
+	color: var(--accent-color);
+}
+
+.footer-logo {
+	background: #9ae0a1;
+	margin: 0 auto;
+	width: 350px;
+	height: 60px;
+	border: var(--main-font-color) 1px solid;
+	text-align: center;
+}
+.footer-logo:hover {
+	opacity: 0.9;
+}
+.footer-logo img {
+	width: 300px;
+	margin-top: 17px;
+}
+/********** フッター End **********/

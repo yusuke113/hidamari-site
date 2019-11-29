@@ -32,6 +32,73 @@ header img {
 }
 /********** ヘッダー End **********/
 
+/***** トップへ戻る *****/
+#page-top {
+	position: fixed;
+	bottom: 130px;
+	right: 20px;
+	font-size: 80%;
+	color: #fff;
+	text-align: center;
+}
+
+#page-top a {
+	display: block;
+	background: #9ae0a1;
+	color: #fff;
+	padding: 25px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	z-index: 1000;
+
+}
+
+.linkGoTop {
+	z-index: 3;
+}
+
+.linkGoTop:hover {
+	opacity: .7;
+}
+
+.linkGoTop p {
+	/* display: none; */
+}
+
+/***** トップへ戻る *****/
+
+/***** フッターへ *****/
+#page-bottom {
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	font-size: 80%;
+	color: #fff;
+	text-align: center;
+}
+
+#page-bottom a {
+	display: block;
+	background: #9ae0a1;
+	color: #fff;
+	padding: 25px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	z-index: 1000;
+
+}
+
+.linkGoBottom {
+	z-index: 3;
+}
+
+.linkGoBottom:hover {
+	opacity: .7;
+}
+/***** フッターへ *****/
+
 h2,
 h3,
 h4,
