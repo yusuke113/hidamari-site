@@ -33,13 +33,13 @@ h1.heading-word {
 .heading-underline {
 	width: 3rem;
 	height: 0.2rem;
-	background: var(--accent-color);
+	background: #e06d15;
 	margin: 0 auto;
 }
 .sub-underline {
 	width: 7rem;
 	height: 0.1rem;
-	background: var(--accent-color);
+	background: #e06d15;
 	margin: 0 auto;
 	margin-bottom: 25px;
 }
@@ -62,7 +62,7 @@ h1.heading-word {
 	width: 60px;
 	height: 60px;
 	text-align: center;
-	background: var(--base-color);
+	background: #c9f0ce;
 	border-radius: 50%;
 	z-index: 1000;
 }
@@ -96,7 +96,7 @@ h1.heading-word {
 	width: 60px;
 	height: 60px;
 	text-align: center;
-	background: var(--base-color);
+	background: #c9f0ce;
 	border-radius: 50%;
 	z-index: 1000;
 }
@@ -276,7 +276,7 @@ header img {
 	color: #fff;
 }
 .philosophy span {
-	color: var(--accent-color);
+	color: #e06d15;
 }
 /***** 理念 End *****/
 
@@ -350,7 +350,7 @@ li.fas {
 
 .menu a p {
 	font-size: 14px;
-	color: var(--main-font-color);
+	color: #393f43;
 	font-weight: bold;
 	margin-top: 20px;
 }
@@ -430,7 +430,7 @@ img.sun {
 	color: #09a318;
 }
 .inntyou-name h3:last-of-type {
-	color: var(--accent-color);
+	color: #e06d15;
 }
 /***** 院長 *****/
 
@@ -840,7 +840,7 @@ footer {
 
 .footer-nav a {
 	text-decoration: none;
-	color: var(--main-font-color);
+	color: #393f43;
 	margin-left: 28px;
 }
 .footer-nav a:hover {
@@ -856,7 +856,7 @@ footer {
 	margin: 10px auto;
 }
 .last span {
-	color: var(--accent-color);
+	color: #e06d15;
 }
 
 .footer-logo {
@@ -864,7 +864,7 @@ footer {
 	margin: 0 auto;
 	width: 350px;
 	height: 60px;
-	border: var(--main-font-color) 1px solid;
+	border: #393f43 1px solid;
 	text-align: center;
 }
 .footer-logo:hover {
