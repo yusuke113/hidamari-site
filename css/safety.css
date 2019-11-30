@@ -444,3 +444,51 @@ footer {
 	margin-top: 17px;
 }
 /********** フッター End **********/
+
+/*************** レスポンシブ対応 Start ***************/
+@media screen and (max-width: 1000px) {
+
+	.eyecatch {
+		width: 100%;
+ }
+
+.main-title {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;
+	position: relative;
+	top: -70px;
+}
+.main-title h1 {
+	color: var(--main-font-color);
+	font-size: 24px;
+	letter-spacing: 5px;
+	text-shadow: 3px 5px 8px #fff;
+	margin: 0 auto;
+	margin-right: 0;
+}
+.main {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding: 24px;
+	background: #fff;
+}
+.container {
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+section {
+	width: 95%;
+}
+
+}
+
+@media screen and (max-width: 610px) {
+	footer {
+		display: none;
+	}
+}
+/*************** レスポンシブ対応 Start ***************/

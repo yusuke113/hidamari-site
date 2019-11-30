@@ -51,7 +51,6 @@ h1.heading-word {
 	color: #fff;
 	padding: 25px 0;
 	text-decoration: none;
-
 }
 
 .linkGoTop {
@@ -69,7 +68,7 @@ h1.heading-word {
 }
 
 .linkGoTop:hover {
-	opacity: .7;
+	opacity: 0.7;
 }
 
 .linkGoTop i {
@@ -77,7 +76,6 @@ h1.heading-word {
 	font-size: 40px;
 	line-height: 56px;
 }
-
 
 /***** トップへ戻る *****/
 
@@ -104,7 +102,7 @@ h1.heading-word {
 }
 
 .linkGoBottom:hover {
-	opacity: .7;
+	opacity: 0.7;
 }
 .linkGoBottom i {
 	color: #fff;
@@ -281,7 +279,6 @@ header img {
 	color: var(--accent-color);
 }
 /***** 理念 End *****/
-
 
 /***** 診察時間 Start *****/
 #schedule-table {
@@ -774,7 +771,6 @@ img.sun {
 
 .access-number {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	margin-top: 10px;
@@ -828,25 +824,27 @@ footer {
 	margin-top: 20px 0 auto;
 }
 .footer-nav {
-	width: 850px;
+	width: 900px;
 	margin: 0 auto;
 }
 
-.footer-nav ul {
+.footer-nav-flex {
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
+.footer-nav-part {
+	display: flex;
+	justify-content: space-between;
+}
+
 .footer-nav a {
 	text-decoration: none;
 	color: var(--main-font-color);
+	margin-left: 28px;
 }
 .footer-nav a:hover {
 	opacity: 0.7;
-}
-.footer-nav li {
-	list-style: none;
-	font-size: 14px;
 }
 
 .last {
@@ -879,3 +877,191 @@ footer {
 /********** フッター End **********/
 
 /*************** クリニック紹介 End ***************/
+
+/*************** レスポンシブ対応 Start ***************/
+
+@media screen and (max-width: 900px) {
+	.slideshow .mask:hover .telephone {
+		margin-left: 65%; /* 左にずらす */
+	}
+
+	.heading {
+		margin: 30px auto;
+	}
+
+	.inntyou-greeting {
+		display: block;
+	}
+
+	.inntyou {
+		width: 50%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.inntyou-name {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-left: 0;
+	}
+
+	.inntyou img {
+		width: 50%;
+		border-radius: 20%;
+		margin-left: 0;
+		margin: 0 auto;
+	}
+
+	.greeting-text {
+		width: 500px;
+		height: 350px;
+		position: static;
+		top: 0;
+		margin-right: 0;
+		margin: 0 auto;
+	}
+
+	.greeting-text h3 {
+		padding-top: 25px;
+		margin-bottom: 10px;
+	}
+
+	.career {
+		display: block;
+		margin-left: 0;
+		margin-top: 0;
+		margin: 0 auto;
+	}
+	.cloud2 {
+		display: none;
+	}
+
+	.visiting-clinic {
+		margin-top: 350px;
+	}
+	.visiting-about {
+		width: 700px;
+		flex-wrap: wrap;
+	}
+	.about {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.about-img {
+		margin: 0;
+	}
+
+	.visiting-flow {
+		width: 700px;
+		flex-wrap: wrap;
+		margin: 20px auto;
+		justify-content: center;
+	}
+	.flow-img {
+		display: none;
+	}
+
+	.service {
+		margin-top: 320px;
+	}
+	.service-contents img {
+		width: 75%;
+	}
+
+	.sub-info {
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+
+	.schedule img {
+		width: 65%;
+	}
+
+	.access-num {
+		width: 350px;
+		height: 100px;
+		background: #f1d0e4;
+		border-radius: 25px;
+		margin: 0 10px;
+	}
+	.access-number {
+		margin-top: 0;
+	}
+	.access-num p {
+		width: 90%;
+		margin: 7px 20px;
+	}
+	.tele-number {
+		height: 123px;
+		transform: scale(0.9);
+	}
+	.access-map {
+		text-align: center;
+		margin: 0 auto;
+	}
+	.map-info {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.footer-nav {
+		width: 100%;
+		margin: 20px auto;
+	}
+	.footer-nav p {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.access-number {
+		flex-wrap: wrap;
+	}
+	.access-num {
+		width: 240px;
+	}
+	.tele-number {
+		height: 105px;
+		transform: scale(0.9);
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.slideshow .mask:hover .telephone {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.slideshow .mask:hover #schedule-table {
+		display: none;
+	}
+
+	.menu {
+		text-align: left;
+		flex-wrap: wrap;
+		justify-content: start;
+		align-content: flex-start;
+	}
+
+	.illustration {
+		display: none;
+	}
+	.visiting-about {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.about {
+		width: 90%;
+		height: auto;
+		margin-right: 0;
+	}
+	.visiting-flow {
+		width: 100%;
+	}
+	.flow {
+		width: 90%;
+		height: auto;
+	}
+}
+
+/*************** レスポンシブ対応 End *****************/
