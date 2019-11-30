@@ -486,9 +486,13 @@ section {
 
 }
 
-@media screen and (max-width: 610px) {
-	footer {
-		display: none;
-	}
+footer {
+	width: 100%;
 }
+
+@media screen and (max-width: 610px) {
+	.footer-nav {
+			display: none;
+		}
+	}
 /*************** レスポンシブ対応 Start ***************/

@@ -490,11 +490,15 @@ section {
 	width: 95%;
 }
 
+footer {
+	width: 100%;
+}
+
 }
 
 @media screen and (max-width: 610px) {
-	footer {
-		display: none;
+	.footer-nav {
+			display: none;
+		}
 	}
-}
 /*************** レスポンシブ対応 Start ***************/
