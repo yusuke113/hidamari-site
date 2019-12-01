@@ -61,7 +61,7 @@ $(function() {
 		//最前面のpageをfadeOutすると２番目nextPageが見えてくる
 		$('#slide img')
 			.eq(page)
-			.fadeOut(2500);
+			.fadeOut(1500);
 	}
 
 	//カウントアップ関数
@@ -86,7 +86,7 @@ $(function() {
 	function startTimer() {
 		Timer = setInterval(function() {
 			countUp();
-		}, 6000);
+		}, 3000);
 	}
 
 	//～秒間隔でイメージ切換の停止設定
