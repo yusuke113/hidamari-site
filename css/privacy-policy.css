@@ -364,34 +364,6 @@ p {
 }
 /******* サブタイトル *******/
 
-.safety-img1 {
-	width: 100%;
-	text-align: center;
-	margin: 20px auto;
-}
-.safety-img1 img {
-	width: 400px;
-}
-.safety-img2 {
-	width: 100%;
-	text-align: center;
-	margin: 40px auto;
-}
-.safety-img2 img {
-	width: 500px;
-	border: 1px solid #333333;
-	padding: 18px 7px;
-}
-.safety-img3 {
-	width: 100%;
-	text-align: center;
-	margin: 40px auto;
-}
-.safety-img3 img {
-	width: 500px;
-	border: 1px solid #333333;
-	padding: 20px 7px;
-}
 /* main End */
 /********** フッター Start **********/
 footer {
