@@ -804,6 +804,11 @@ img.sun {
 	margin-right: 16px;
 }
 
+#gmap {
+	width: 600px;
+	height: 400px;
+}
+
 .access-map {
 	text-align: center;
 	margin: 0 auto;
