@@ -409,7 +409,7 @@ img.sun {
 	position: relative;
 }
 .inntyou img {
-	width: 50%;
+	width: 100%;
 	border-radius: 20%;
 	margin-left: 30%;
 }
@@ -503,7 +503,7 @@ img.sun {
 		#fae4d4 90%
 	);
 	margin-left: 11%;
-	margin-top: -100px;
+	margin-top: -70px;
 }
 .career h3 {
 	text-align: center;
@@ -894,7 +894,7 @@ footer {
 	}
 
 	.inntyou {
-		width: 50%;
+		width: 70%;
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -906,14 +906,13 @@ footer {
 	}
 
 	.inntyou img {
-		width: 50%;
 		border-radius: 20%;
 		margin-left: 0;
 		margin: 0 auto;
 	}
 
 	.greeting-text {
-		width: 500px;
+		width: 550px;
 		height: 350px;
 		position: static;
 		top: 0;
@@ -927,6 +926,7 @@ footer {
 	}
 
 	.career {
+		width: 450px;
 		display: block;
 		margin-left: 0;
 		margin-top: 0;
