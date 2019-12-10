@@ -804,15 +804,15 @@ img.sun {
 	margin-right: 16px;
 }
 
-#gmap {
-	width: 600px;
-	height: 400px;
-}
-
 .access-map {
 	text-align: center;
 	margin: 0 auto;
 }
+iframe {
+	position: static;
+	margin: 0 auto;
+}
+
 .map-info {
 	width: 80%;
 	margin: 0 auto;
@@ -999,10 +999,6 @@ footer {
 	.tele-number {
 		height: 123px;
 		transform: scale(0.9);
-	}
-	.access-map {
-		text-align: center;
-		margin: 0 auto;
 	}
 	.map-info {
 		width: 100%;
