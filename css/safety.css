@@ -223,6 +223,10 @@ p {
 }
 /* アイキャッチ End */
 
+.sp-title {
+	display: none;
+}
+
 /* main Start */
 .main {
 	display: block;
@@ -499,25 +503,15 @@ footer {
 	}
 	/********** ヘッダー End **********/
 	.eyecatch {
-		width: 100%;
-		/* height: auto; */
+		display: none;
 	}
 
-	.main-title {
-		text-align: center;
-		width: 748px;
-		height: 100px;
-		padding-bottom: 50px;
-		position: relative;
-		top: -70px;
+	.sp-title {
+		display: inline;
 	}
-	.main-title h1 {
+	.sp-title h1 {
 		color: var(--main-font-color);
-		font-size: 40px;
-		letter-spacing: 5px;
-		text-shadow: 3px 5px 8px #fff;
-		margin: 0 auto;
-		margin-right: 400px;
+		font-size: 24px;
 	}
 	/* アイキャッチ End */
 
