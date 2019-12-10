@@ -561,7 +561,18 @@ footer {
 	}
 	/* footer */
 	footer {
-		display: none;
+		width: 100%;
+		padding: 0;
+	}
+	.last {
+		margin-top: 0;
+	}
+	.last h3 {
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+	.footer-logo {
+		transform: scale(0.8);
 	}
 	/* footer */
 }
