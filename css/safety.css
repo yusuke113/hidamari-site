@@ -510,7 +510,7 @@ footer {
 		left: 0;
 	}
 	.heading h2:before {
-		top: 0;
+		top: 1em;
 	}
 	.subsub-title {
 		margin-bottom: 10px;
