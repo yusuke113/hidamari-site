@@ -481,6 +481,11 @@ footer {
 		bottom: 30px;
 		right: 10px;
 	}
+
+	body {
+		z-index: -1;
+	}
+
 	/********** ヘッダー Start **********/
 	header {
 		width: 100%;
@@ -534,6 +539,10 @@ footer {
 		margin: 0 auto;
 	}
 	/* アイキャッチ End */
+
+	section {
+		margin: 0 10px;
+	}
 
 	/* main Start */
 	.main {
