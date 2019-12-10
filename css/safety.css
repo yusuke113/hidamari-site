@@ -504,13 +504,13 @@ footer {
 	.heading h4 {
 		border: none;
 		position: relative;
+		padding: 10px;
 		padding-left: 30px;
 		font-size: 20px;
-		padding: 15px;
 		left: 0;
 	}
 	.subsub-title {
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 	.eyecatch {
 		display: none;
