@@ -504,8 +504,9 @@ footer {
 	.heading h4 {
 		border: none;
 		position: relative;
-		padding: 25px;
+		padding: 10px;
 		padding-left: 30px;
+		padding-bottom: 30px;
 		font-size: 20px;
 		left: 0;
 	}
