@@ -506,9 +506,11 @@ footer {
 		position: relative;
 		padding: 10px;
 		padding-left: 30px;
-		padding-bottom: 30px;
 		font-size: 20px;
 		left: 0;
+	}
+	.heading h2:before {
+		top: 0;
 	}
 	.subsub-title {
 		margin-bottom: 10px;
