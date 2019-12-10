@@ -574,6 +574,13 @@ footer {
 	.footer-logo {
 		transform: scale(0.8);
 	}
+	.last small {
+		font-size: 0;
+	}
+	.last small::before {
+		font-size: 12px;
+		content: '\00a9 2019 荒川ひだまり在宅クリニック AllRights Reserved.';
+	}
 	/* footer */
 }
 /*************** レスポンシブ対応 Start ***************/
