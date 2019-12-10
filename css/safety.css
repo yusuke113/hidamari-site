@@ -487,6 +487,7 @@ footer {
 		height: 46px;
 		background: #9ae0a1;
 		position: fixed;
+		z-index: 100;
 	}
 
 	.header-logo {
