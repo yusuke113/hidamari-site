@@ -541,7 +541,8 @@ footer {
 	/* アイキャッチ End */
 
 	section {
-		margin: 0 10px;
+		margin-right: 10px;
+		margin-left: 15px;
 	}
 
 	/* main Start */
