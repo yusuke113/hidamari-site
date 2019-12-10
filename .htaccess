@@ -2,4 +2,4 @@ RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} (iPhone|iPod|Android.*Mobile|Windows.*Phone|BlackBerry) [NC]
 RewriteCond %{QUERY_STRING} !viewmode=pc
 RewriteCond %{HTTP_REFERER} !^https?://.*ara-hidamari\.com.*$ [NC]
-RewriteRule ^($|/$|/?index\.html$) "http://www.ara-hidamari.com/sp/index.html" [R,L]
+RewriteRule ^($|/$|/?index\.html$) "https://hidamari-site.herokuapp.com/sp/index.html" [R,L]
