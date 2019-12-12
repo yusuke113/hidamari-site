@@ -4,8 +4,11 @@ html {
 }
 
 body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
+		Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	position: relative;
-	min-width: 380px;
+  min-width: 380px;
+  margin: 0;
 }
 
 .header-base {
@@ -23,7 +26,8 @@ body {
 .abs {
 	z-index: 110;
 	position: absolute;
-	top: -9px;
+  top: 0;
+  left: 7px;
 }
 .header-menu {
 	width: 100%;
@@ -73,11 +77,11 @@ body {
 .tele a {
 	margin-right: 20px;
 	font-size: 60px;
-	color: #EA9A5D;
+	color: #ea9a5d;
 }
 
 .MenuLavel {
-  display: none;
+	display: none;
 	position: fixed;
 	left: -25px;
 	top: 43px;
@@ -86,19 +90,19 @@ body {
 
 .MenuLavel li {
 	list-style: none;
-  text-align: center;
+	text-align: center;
 }
 .MenuLavel a {
-  display: block;
+	display: block;
 	text-decoration: none;
-  width: 137px;
-  height: 50px;
+	width: 137px;
+	height: 50px;
 	background-color: rgba(71, 194, 84, 0.95);
-  border-radius: 10px;
-  /* border: solid 1px transparent; */
+	border-radius: 10px;
+	/* border: solid 1px transparent; */
 	transition-duration: 1s;
 	transition-delay: 0s;
-  transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 .MenuLavel p {
 	min-height: 17px;
@@ -106,9 +110,9 @@ body {
 	color: #fff;
 	text-align: center;
 	font-size: 14px;
-  position: relative;
-  line-height: 50px;
-  margin: 0 auto;
+	position: relative;
+	line-height: 50px;
+	margin: 0 auto;
 }
 .MenuLavel .MenuItemActive {
 	background-color: rgba(213, 125, 125, 0.95);
