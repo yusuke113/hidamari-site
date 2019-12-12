@@ -345,7 +345,7 @@ li.fas {
 	border-radius: 50%;
 	padding-top: 16px;
 	-webkit-transition: all 0.2s ease;
-	transition: all 0.1s ease;
+	transition: all 0.05s ease;
 }
 
 .menu a p {
