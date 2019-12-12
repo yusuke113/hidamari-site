@@ -11,6 +11,41 @@ body {
 	margin: 0;
 }
 
+/******************************/
+/**          共通部分          **
+/******************************/
+
+/***** 見出し *****/
+.heading {
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+}
+h1.heading-word {
+	font-size: 22px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.heading-underline {
+	width: 3rem;
+	height: 0.2rem;
+	background: #e06d15;
+	margin: 0 auto;
+}
+.sub-underline {
+	width: 7rem;
+	height: 0.1rem;
+	background: #e06d15;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+/***** 見出し *****/
+
+/******************************/
+/**          共通部分          **
+/******************************/
+
 .header-base {
 	z-index: 100;
 	position: fixed;
@@ -122,28 +157,161 @@ body {
 	width: 100%;
 }
 
+/********** トップページ Start **********/
+.top {
+	height: 330px;
+}
 .topdown {
-  width: 100%;
+	width: 100%;
 	height: 70px;
 }
 .logo {
-  width: 100%;
+	width: 100%;
 	height: 50px;
-	background: #c9f0ce;
-  text-align: center;
+	background: #9ae0a1;
+	text-align: center;
 }
 .logo img {
-  display: block;
-  width: 350px;
-  margin: 0 auto;
-  padding-top: 10px;
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+	padding-top: 10px;
 }
 
 #slide {
-  width: 100%;
-  position: relative;
+	width: 100%;
+	position: relative;
 }
 #slide img {
-  width: 100%;
-  position: absolute;
+	width: 100%;
+	position: absolute;
 }
+/********** トップページ End **********/
+
+/********** クリニック紹介 Start **********/
+img.cloud1 {
+	display: block;
+	position: relative;
+	top: -80px;
+	margin-left: 5%;
+}
+
+img.sun {
+	display: block;
+	position: relative;
+	top: -150px;
+	margin-left: 80%;
+}
+
+/***** 院長 *****/
+.inntyou {
+	width: 100%;
+	margin-top: -120px;
+	text-align: center;
+}
+.inntyou img {
+	width: 370px;
+	border-radius: 20%;
+}
+
+.inntyou-name {
+	text-align: center;
+}
+.inntyou-name h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 auto;
+	color: #09a318;
+}
+.inntyou-name h3:last-of-type {
+	color: #e06d15;
+}
+/***** 院長 *****/
+
+/***** あいさつ *****/
+.greeting-text {
+	width: 360px;
+	height: auto;
+	border-radius: 20%;
+	background: -moz-radial-gradient(
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.8) 70%,
+		#9dfaaf 100%
+	);
+	background: -webkit-radial-gradient(
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.8) 70%,
+		#9dfaaf 100%
+	);
+	background: radial-gradient(
+		rgba(215, 250, 210, 0.27) 0%,
+		rgba(146, 242, 165, 0.8) 70%,
+		#9dfaaf 100%
+	);
+	margin: 0 auto;
+}
+
+.greeting-text h3 {
+	font-size: 16px;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.greeting-text p {
+	font-size: 14px;
+	padding-bottom: 18px;
+}
+
+.text-container {
+	width: 85%;
+	margin: 0 auto;
+	color: var(--defalt-font-color);
+}
+/***** あいさつ *****/
+/***** 経歴 *****/
+.career {
+	display: block;
+	width: 360px;
+	height: auto;
+	border-radius: 20%;
+	background: -moz-linear-gradient(
+		left,
+		#ffc59a 40%,
+		#f5cbab 60%,
+		#fae4d4 90%
+	);
+	background: -webkit-linear-gradient(
+		left,
+		#ffc59a 40%,
+		#f5cbab 60%,
+		#fae4d4 90%
+	);
+	background: linear-gradient(
+		to right,
+		#ffc59a 40%,
+		#f5cbab 60%,
+		#fae4d4 90%
+	);
+	margin: 0 auto;
+	margin-top: -4px;
+}
+.career h3 {
+	font-size: 16px;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.career ul {
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
+.career li {
+	font-size: 14px;
+	letter-spacing: 10px;
+	padding-bottom: 15px;
+}
+/***** 経歴 *****/
+/********** クリニック紹介 End **********/
