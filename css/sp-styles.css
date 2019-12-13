@@ -34,54 +34,6 @@ h1.heading-word {
 	margin: 0 auto;
 }
 
-.maru {
-  position: relative;
-  left: 3px;
-}
-.maru::before {
-	height: 1em;
-	border-radius: 50%;
-	width: 1em;
-	left: 0;
-	top: 1.3em;
-	background-image: linear-gradient(
-		45deg,
-		#ea9a5d 0%,
-		#f5cbab 99%,
-		#fae4d4 100%
-	);
-}
-.maru::before {
-	content: '';
-  position: absolute;
-  left: 110px;
-  top: 20px;
-}
-
-.maru1::before {
-  left: 105px;
-}
-.maru2::before {
-  left: 135px;
-}
-.maru3::before {
-  left: 110px;
-}
-.maru4::before {
-  left: 118px;
-}
-.maru5::before {
-  left: 160px;
-  top: 5px;
-}
-.maru6::before {
-  left: 145px;
-  top: 5px;
-}
-.maru7::before {
-  left: 160px;
-  top: 5px;
-}
 /***** 見出し *****/
 
 /***** トップへ戻る *****/
@@ -162,9 +114,10 @@ h1.heading-word {
 	color: #fff;
 }
 .tele-number {
-	margin-left: 63px;
+	margin-left: 120px;
 }
 .tele-number p {
+  color: #e06d15;
 	text-align: right;
 	margin: 0;
 }
