@@ -33,14 +33,90 @@ h1.heading-word {
 	background: #e06d15;
 	margin: 0 auto;
 }
-.sub-underline {
-	width: 7rem;
-	height: 0.1rem;
-	background: #e06d15;
-	margin: 0 auto;
-	margin-bottom: 25px;
+
+.maru {
+  position: relative;
+  left: 3px;
+}
+.maru::before {
+	height: 1em;
+	border-radius: 50%;
+	width: 1em;
+	left: 0;
+	top: 1.3em;
+	background-image: linear-gradient(
+		45deg,
+		#ea9a5d 0%,
+		#f5cbab 99%,
+		#fae4d4 100%
+	);
+}
+.maru::before {
+	content: '';
+  position: absolute;
+  left: 110px;
+  top: 20px;
+}
+
+.maru1::before {
+  left: 105px;
+}
+.maru2::before {
+  left: 135px;
+}
+.maru3::before {
+  left: 110px;
+}
+.maru4::before {
+  left: 118px;
+}
+.maru5::before {
+  left: 160px;
+  top: 5px;
+}
+.maru6::before {
+  left: 145px;
+  top: 5px;
+}
+.maru7::before {
+  left: 160px;
+  top: 5px;
 }
 /***** 見出し *****/
+
+/***** トップへ戻る *****/
+#page-top a {
+	display: block;
+	color: #fff;
+	padding: 25px 0;
+	text-decoration: none;
+}
+
+.linkGoTop {
+	position: fixed;
+	bottom: 160px;
+	right: 20px;
+	font-size: 80%;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	background: #ea9a5d;
+	border-radius: 50%;
+	z-index: 1000;
+}
+
+.linkGoTop:hover {
+	opacity: 0.7;
+}
+
+.linkGoTop i {
+	color: #fff;
+	font-size: 40px;
+	line-height: 56px;
+}
+
+/***** トップへ戻る *****/
 
 /******************************/
 /**          共通部分          **
@@ -519,14 +595,14 @@ img.sun {
 
 /********** 外来診療 Start **********/
 .outpatient-text p {
-  width: 340px;
+	width: 340px;
 	padding-top: 20px;
 	margin: 0 auto;
-  text-align: center;
-  font-size: 14px;
+	text-align: center;
+	font-size: 14px;
 }
 .outpatient-text p:nth-of-type(2) {
-  text-align: left;
+	text-align: left;
 }
 .outpatient-text span {
 	content: url('../img/capsule-orange-color-thumbnail.png');
@@ -554,27 +630,27 @@ img.sun {
 /********** アクセス Start **********/
 .access {
 	background: #fae4d4;
-  padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 .access-info {
 	width: 100%;
 	margin: 0 auto;
 }
 .access-logo {
-  display: flex;
+	display: flex;
 	height: 40px;
-  margin: 0 auto;
-  align-items: center;
+	margin: 0 auto;
+	align-items: center;
 }
 .access-logo img {
 	width: 40px;
 	height: 100%;
-  border-radius: 10px;
-  margin-left: 15px;
+	border-radius: 10px;
+	margin-left: 15px;
 }
 .access-logo h4 {
-  font-size: 18px;
-  margin-left: 15px;
+	font-size: 18px;
+	margin-left: 15px;
 }
 
 .access-number {
@@ -588,10 +664,10 @@ img.sun {
 	margin: 0 auto;
 }
 .access-num p {
-  margin: 0 auto;
-  padding-top: 9px;
-  font-size: 14px;
-  margin-left: 25px;
+	margin: 0 auto;
+	padding-top: 9px;
+	font-size: 14px;
+	margin-left: 25px;
 }
 .tele-num {
 	width: 300px;
@@ -600,13 +676,13 @@ img.sun {
 	background: #ea9a5d;
 	color: #fff;
 	text-align: center;
-  margin: 10px auto;
-  padding-top: 9px;
+	margin: 10px auto;
+	padding-top: 9px;
 }
 .tele-num p {
 	width: 300px;
-  margin: 5px auto;
-  font-size: 14px;
+	margin: 5px auto;
+	font-size: 14px;
 }
 .tele-num p:nth-of-type(2) {
 	font-size: 20px;
@@ -628,8 +704,8 @@ iframe {
 .map-info p {
 	width: 350px;
 	height: 20px;
-  margin: 5px 0;
-  font-size: 14px;
+	margin: 5px 0;
+	font-size: 14px;
 }
 /********** アクセス End **********/
 
@@ -639,12 +715,13 @@ footer {
 }
 
 .last {
-	margin: 30px 0 auto;
+	margin: 20px 0 auto;
 	text-align: center;
 	padding-bottom: 10px;
 }
 .last h3 {
 	margin: 10px auto;
+	font-size: 18px;
 }
 .last span {
 	color: #e06d15;
@@ -666,6 +743,6 @@ footer {
 	margin-top: 15px;
 }
 .last small {
-  font-size: 9px;
+	font-size: 9px;
 }
 /********** フッター End **********/

@@ -16,7 +16,21 @@ $(function() {
 		});
 	}
 	MenuClose();
-	// その他の要素クリックでMenu非表示  ==========================
+  // その他の要素クリックでMenu非表示  ==========================
+
+  //ページ内移動 ==========================
+	function pageScloll() {
+		$('a[href^="#"]').click(function() {
+			var speed = 300;
+			var href = $(this).attr('href');
+			var target = $(href == '#' || href == '' ? 'html' : href);
+			var position = target.offset().top;
+			$('body,html').animate({ scrollTop: position }, speed, 'swing');
+			return false;
+		});
+	}
+	pageScloll();
+	//ページ内移動 ==========================
 
 	//スライドショー ==========================
 	var page;
