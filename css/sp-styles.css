@@ -52,7 +52,7 @@ h1.heading-word {
 	left: 0px;
 	right: 0px;
 	top: -3px;
-	width: 100%;
+	width: 380px;
 	height: 70px;
 	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 	background-color: #ffffff;
@@ -65,7 +65,7 @@ h1.heading-word {
 	left: 7px;
 }
 .header-menu {
-	width: 100%;
+	width: 380px;
 	height: 70px;
 	position: fixed;
 	display: flex;
