@@ -41,11 +41,11 @@ $(function() {
 		$(window).load(function() {
 			var headings = [
 				$('div.top').offset().top - 0,
-				$('div#clinic').offset().top - 20,
-				$('div#visiting-clinic').offset().top - 20,
-				$('div#service').offset().top - 20,
-				$('div#outpatient').offset().top - 20,
-				$('div#access').offset().top - 20
+				$('div#clinic').offset().top - 30,
+				$('div#visiting-clinic').offset().top - 30,
+				$('div#service').offset().top - 30,
+				$('div#outpatient').offset().top - 30,
+				$('div#access').offset().top - 30
 			];
 
 			$(window).scroll(function() {
