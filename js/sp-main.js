@@ -16,21 +16,55 @@ $(function() {
 		});
 	}
 	MenuClose();
-  // その他の要素クリックでMenu非表示  ==========================
+	// その他の要素クリックでMenu非表示  ==========================
 
-  //ページ内移動 ==========================
+	//ページ内移動 ==========================
 	function pageScloll() {
 		$('a[href^="#"]').click(function() {
 			var speed = 300;
 			var href = $(this).attr('href');
 			var target = $(href == '#' || href == '' ? 'html' : href);
-			var position = target.offset().top;
+			var position = target.offset().top - 55;
 			$('body,html').animate({ scrollTop: position }, speed, 'swing');
 			return false;
 		});
 	}
 	pageScloll();
 	//ページ内移動 ==========================
+
+	//見ている項目のMenuのColorを変える ==========================
+	function scrollChangeLinkColor() {
+		// MenuItem要素の取得
+		var MenuItems;
+		MenuItems = $('.MenuItemContainer a');
+		// heading要素の取得
+		$(window).load(function() {
+			var headings = [
+				$('div.top').offset().top - 0,
+				$('div#clinic').offset().top - 20,
+				$('div#visiting-clinic').offset().top - 20,
+				$('div#service').offset().top - 20,
+				$('div#outpatient').offset().top - 20,
+				$('div#access').offset().top - 20
+			];
+
+			$(window).scroll(function() {
+				var windowScrolltop = $(window).scrollTop();
+				for (var i = 0; i < headings.length; i++) {
+					if (
+						windowScrolltop > headings[i] - 50 &&
+						windowScrolltop - headings[i] > -50
+					) {
+						$(MenuItems).removeClass('MenuItemActive');
+						$(MenuItems[i]).addClass('MenuItemActive');
+					}
+				}
+			});
+		});
+	}
+
+	scrollChangeLinkColor();
+	//見ている項目のMenuのColorを変える ==========================
 
 	//スライドショー ==========================
 	var page;

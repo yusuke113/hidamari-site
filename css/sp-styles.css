@@ -182,7 +182,6 @@ h1.heading-word {
 .container {
 	width: 100%;
 }
-
 /********** トップページ Start **********/
 .top {
 	height: 330px;
@@ -237,7 +236,7 @@ img.sun {
 	text-align: center;
 }
 .inntyou img {
-	width: 370px;
+	width: 410px;
 	border-radius: 20%;
 }
 
@@ -257,7 +256,7 @@ img.sun {
 
 /***** あいさつ *****/
 .greeting-text {
-	width: 360px;
+	width: 400px;
 	height: auto;
 	border-radius: 20%;
 	background: -moz-radial-gradient(
